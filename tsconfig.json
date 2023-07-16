@@ -22,6 +22,7 @@
       "@styles/*": ["./styles/*"],
       "@enums/*": ["./libs/enums/*"],
       "@themeProvider/*": ["./theme_provider/*"],
+      "@images/*": ["./libs/assets/images/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

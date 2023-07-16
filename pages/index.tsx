@@ -5,10 +5,12 @@ import {
   Box
 } from '@mui/material'
 import React from 'react'
+import Header from '@components/Header'
 
 const Home: NextPageWithLayout = () => {
   return (
     <Box>
+      <Header />
       <Typography variant="h2">This is home page</Typography>
     </Box>
   )

@@ -43,7 +43,7 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: `"Roboto", "Helvetica", "Arial", sans-serif`,
+    fontFamily: `'Yu Gothic medium', arial, clean, verdana, 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', Osaka, sans-serif`,
     h2: {
       fontSize: 18,
       fontWeight: 600,
@@ -71,7 +71,7 @@ const theme = createTheme({
     }
   },
   components: {
-    // override component stype
+    // override component style
   },
 })
 

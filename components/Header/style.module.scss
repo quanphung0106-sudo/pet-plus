@@ -1,0 +1,33 @@
+.MainContainer {
+    width: 100%;
+    max-width: 1320px;
+    // background-color: aqua;
+}
+
+#header {
+}
+
+.Header {
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px 20px 24px;
+
+    h1 {
+        display: flex;
+        min-width: 142px;
+        width: 142px;
+        cursor: pointer;
+    }
+
+    &List {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        font-size: 1.2rem;
+        color: #002E5D;
+        white-space: nowrap;
+
+        a {
+        }
+    }
+}
