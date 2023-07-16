@@ -23,3 +23,13 @@ export const TextButton = (props: ButtonProps) => {
     />
   )
 }
+
+export const GhostButton = (props: ButtonProps) => {
+  return (
+    <LoadingButton
+      {...props}
+      variant="text"
+      className={clsx(styles.BaseButton, styles.GhostButton, props.className)}
+    />
+  )
+}
