@@ -1,0 +1,84 @@
+@import '../../../styles/color';
+
+.PopoverPaper {
+  width: 100vw;
+  height: 420px;
+  background-color: rgba(255, 255, 255, 0.97);
+  padding: 40px 0 16px;
+  box-shadow: none;
+
+  &Wrapper {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+
+    .Figure {
+      width: 240px;
+      height: 140px;
+      margin-right: 40px;
+
+      img {
+        border-radius: 10px;
+        object-fit: cover;
+      }
+    }
+
+    .List {
+      width: calc(100% - 280px);
+      display: flex;
+      justify-content: space-between;
+      font-family: arial, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo,
+        'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+      column-gap: 20px;
+      flex-wrap: wrap;
+
+      &Item {
+        position: relative;
+        width: calc((100% - 20px) / 2);
+        padding: 0;
+        margin-top: 16px;
+
+        &:not(.Top) {
+          padding-left: 20px;
+          ::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 10px;
+            height: 2px;
+            background-color: #c3d3e6;
+          }
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          color: $dark_blue_text;
+        }
+      }
+
+      .Top {
+        width: 100%;
+        margin-bottom: 5px;
+
+        a {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          padding-left: 46px;
+          height: 44px;
+          background: url(../../../libs/assets/images/ico_link_transition.png) no-repeat center left;
+          background-size: 26px 6px;
+          border-bottom: 1px solid #c3d3e6;
+          font-weight: 600;
+          letter-spacing: 0.05em;
+          transition: 200ms ease-in;
+          transition-property: border-color;
+          color: $dark_blue_text;
+        }
+      }
+    }
+  }
+}
