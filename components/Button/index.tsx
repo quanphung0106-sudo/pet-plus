@@ -1,9 +1,8 @@
 import React from 'react'
-import { ButtonProps } from '@mui/material'
 import { LoadingButton } from '@mui/lab'
-import styles from './style.module.scss'
+import { ButtonProps } from '@mui/material'
 import clsx from 'clsx'
-
+import styles from './style.module.scss'
 export const PrimaryButton = (props: ButtonProps) => {
   return (
     <LoadingButton
